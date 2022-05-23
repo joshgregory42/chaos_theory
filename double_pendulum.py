@@ -2,7 +2,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import scipy as sp
 import matplotlib.animation as animation
-
+# TODO: Add ability to save file as .mp4
 matplotlib.use('TkAgg')  # 'tkAgg' if Qt not present
 
 '''
