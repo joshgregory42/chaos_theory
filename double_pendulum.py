@@ -33,7 +33,7 @@ class Pendulum:
         x2 = x1 + self.length * sp.sin(self.theta2)
         y2 = y1 - self.length * sp.cos(self.theta2)
 
-        print(self.theta1, self.theta2)
+        # print(self.theta1, self.theta2)
         return sp.array([[0.0, 0.0], [x1, y1], [x2, y2]])
 
     def evolve(self):
@@ -119,4 +119,7 @@ class Animator:
 pendulum = Pendulum(theta1=sp.pi, theta2=sp.pi - 0.01, dt=0.01)
 animator = Animator(pendulum=pendulum, draw_trace=True)
 animator.animate()
+# animator.animate.save("double_plain.mp4", writer=animation.FFMpegWriter(fps=60))
+
+
 plt.show()
